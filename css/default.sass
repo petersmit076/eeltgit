@@ -1,0 +1,256 @@
+@import "colorsheet.sass"
+
+body
+  font-family: 'Roboto', sans-serif
+  color: $text
+  padding: 0
+  margin: 0
+
+.right
+  float: right
+
+.left
+  float: left
+
+.sticky
+  position: fixed !important
+  top: 0
+  z-index: 999
+
+.sideHeader
+  text-align: center
+  font-weight: 300
+  position: relative
+  margin: 15px 0
+  &:after
+    content: ""
+    width: 50%
+    height: 1px
+    background-color: $light-grey
+    position: absolute
+    left: 0
+    right: 0
+    margin: 0 auto
+    bottom: 0
+    border-radius: 50%
+
+
+#header
+  position: relative
+  min-height: 300px
+  overflow: hidden
+  .overlay
+    width: 100%
+    background-color: rgba(0,0,0,0.3)
+    height: 100%
+    z-index: -1
+    position: absolute
+    top: 0
+  img
+    width: 100%
+    position: fixed
+    z-index: -2
+    top: 0
+    min-height: 300px
+  .headingText
+    position: relative
+    margin-top: 15%
+    color: white
+    a
+      color: white
+      &:hover
+        text-decoration: none
+    .title
+      display: block
+      text-shadow: 1px 3px 2px rgba(0,0,0,0.2)
+      &:hover
+        i
+          margin-left: 20px
+          transition: all ease-in-out .2s
+      h1
+        display: inline
+        font-size: 48px
+      i
+        font-size: 36px
+        margin-left: 10px
+        transition: all ease-in-out .2s
+    h2
+      display: inline
+      font-weight: 300
+    > i
+      font-size: 20px
+      margin-left: 10px
+
+#maincontent
+  margin-top: -6px
+  position: relative
+  background-color: black
+  padding-bottom: 20px
+  z-index: 1
+  &:after
+    content: ""
+    background: url('https://wallpaperscraft.com/image/height_canyon_retina_81205_2560x1024.jpg') fixed center
+    opacity: 0.2
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    position: absolute
+    z-index: -1
+  .container
+    background-color: rgba(255,255,255,0.9)
+    padding-top: 40px
+    z-index: 99
+  .affiliatePlaceBanner
+    text-align: center
+    margin-bottom: 30px
+    img
+      width: 100%
+    .adText
+    font-weight: 300
+    color: $light-grey
+
+.scroll-line
+  width: 0
+  top: 0
+  position: absolute
+  height: 3px
+  background-color: $yellow
+
+#nav
+  width: 100%
+  position: relative
+  padding: 8px 0
+  background-color: $light-grey
+  display: inline-block
+  font-size: 18px
+  font-weight: 300
+  img
+    width: 160px
+  ul
+    margin: 0
+    padding: 12px 0
+    text-align: right
+    li
+      list-style: none
+      margin: 0 10px 0 0
+      display: inline-block
+      a
+        color: $text
+        text-decoration: none
+        padding: 2px 4px
+        transition: ease-in-out .1s
+        &:hover
+          background-color: #3f3f3f
+          color: white
+          transition: all ease-in-out .2s
+
+.blok
+  position: relative
+  display: inline-block
+  padding: 5px
+  width: 100%
+  margin-bottom: 10px
+
+.grijs
+  background-color: $light-grey
+
+.search
+  display: block
+  padding: 5px
+  &:before
+    content: "\f002"
+    font-family: FontAwesome
+    color: #aaaaaa
+    margin-left: 10px
+    font-size: 18px
+    margin-top: 6px
+    position: absolute
+  input
+    width: 100%
+    padding: 9px
+    background-color: white
+    border: none
+    border-radius: 3px
+    padding-left: 40px
+
+.blogArt
+  .imgBox
+    position: relative
+    overflow: hidden
+    &:hover
+      img
+        opacity: 0.9
+    img
+      width: 100%
+      z-index: 2
+      position: relative
+    .overlay
+      background-color: black
+      width: 100%
+      z-index: 1
+      height: 100%
+  a
+    &:hover
+      text-decoration: none
+    h2
+      color: $text
+      &:hover
+        color: $yellow
+        transition: all ease-in .2s
+  &:hover
+    background-color: $light-grey
+  h2
+    margin: 0
+    padding: 0
+  span
+    font-weight: 300
+  p
+    margin-top: 15px
+  .extraInfo
+    display: inline
+    .catTag
+      font-weight: 300
+      display: inline-block
+      margin-right: 10px
+    i
+      margin-right: 10px
+      color: $yellow
+    a
+      font-weight: 600
+      color: $yellow
+      &:after
+        content: "\f054"
+        font-family: FontAwesome
+        margin-left: 5px
+        transition: all ease-in-out .2s
+      &:hover
+        text-decoration: none
+        &:after
+          margin-left: 10px
+          transition: all ease-in-out .2s
+
+#footer
+  background-color: $eelt-grey
+  padding: 20px 0
+  color: white
+  font-weight: 300
+  img
+    margin-bottom: 20px
+  h5
+    font-weight: 500
+    position: relative
+    margin-bottom: 15px
+    &:after
+      content: ""
+      width: 100%
+      height: 1px
+      background-color: $yellow
+      position: absolute
+      bottom: -4px
+      left: 0
+  a
+    color: $light-grey
+    text-decoration: underline
+    &:hover
+      text-decoration: none
